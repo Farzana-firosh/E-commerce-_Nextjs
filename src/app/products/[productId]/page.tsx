@@ -43,19 +43,19 @@ export default function ProductDetail({ params }: Props) {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 grid md:grid-cols-2 gap-10 items-start bg-white rounded-2xl shadow-lg mt-28">
+    <div className="max-w-4xl mx-auto p-2 sm:p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start bg-white rounded-2xl shadow-lg mt-24 md:mt-28">
       {/* Product Image */}
-      <div className="bg-white rounded-xl shadow p-6 flex items-center justify-center">
+      <div className="bg-white rounded-xl shadow p-2 sm:p-4 md:p-6 flex items-center justify-center">
         <img
           src={product.image}
           alt={product.title}
-          className="w-full h-[420px] object-contain"
+          className="w-full max-w-xs sm:max-w-sm md:max-w-full h-[260px] sm:h-[340px] md:h-[420px] object-contain"
         />
       </div>
 
       {/* Product Info */}
       <div className="flex flex-col h-full">
-        <h1 className="text-3xl font-bold mb-2 text-[#1a2980] truncate">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-2 text-[#1a2980] truncate">
           {product.title}
         </h1>
 
@@ -77,12 +77,12 @@ export default function ProductDetail({ params }: Props) {
         )}
 
         {/* Price */}
-        <p className="text-2xl text-pink-600 font-extrabold mb-4">
+        <p className="text-xl sm:text-2xl text-[#ffb347] font-extrabold mb-4">
           ${product.price}
         </p>
 
         {/* Description */}
-        <p className="text-gray-700 mb-6">{product.description}</p>
+        <p className="text-gray-700 mb-6 text-sm sm:text-base">{product.description}</p>
 
         {/* Quantity Controls */}
         <div className="flex items-center gap-3 mb-6">
