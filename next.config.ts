@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['storage.googleapis.com','fakestoreapi.in'], // Add any other domains here if needed
+  },
 };
 
 export default nextConfig;
