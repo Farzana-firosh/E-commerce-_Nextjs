@@ -12,7 +12,7 @@ export default function CheckoutPage() {
         Checkout
       </h1>
       <div className="grid md:grid-cols-2 gap-10 bg-white rounded-2xl shadow-2xl p-8">
-        {/* Left: Form + Cart */}
+        
         <div className="space-y-8">
           <div className="bg-[#f9fafb] rounded-xl shadow p-6">
             <h2 className="text-xl font-semibold text-[#1a2980] mb-4">Billing Information</h2>

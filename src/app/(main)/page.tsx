@@ -14,7 +14,7 @@ export default function Homepage() {
 
   useEffect(() => {
     ProductsService.getProducts().then((products) => {
-      setFeaturedProducts(products.slice(0, 4)); // show top 8 featured
+      setFeaturedProducts(products.slice(0, 4)); 
     });
   }, []);
 

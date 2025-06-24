@@ -14,7 +14,7 @@ export class ProductsService extends ServiceBase {
       return JSON.parse(text);
     } catch (error) {
       console.error("Failed to fetch products:", error);
-      return []; // or return a default value
+      return []; 
     }
   };
 
